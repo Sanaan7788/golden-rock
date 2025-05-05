@@ -1,0 +1,34 @@
+golden-rock-1.0/
+│
+├── public/                      # Static files
+│   ├── index.html               # HTML template
+│   ├── favicon.ico              # Favicon
+│   ├── manifest.json            # PWA manifest
+│   └── assets/                  # Assets that need direct URL access
+│       └── videos/
+│           └── landing-video.mp4
+│
+├── src/                         # Source code
+│   ├── assets/                  # Project assets
+│   │   └── data/                # Data files
+│   │       ├── servicesData.js  # Services section data
+│   │       ├── aboutUsData.js   # About Us section data
+│   │       └── contactData.js   # Contact section data
+│   │
+│   ├── components/              # React components
+│   │   ├── Navbar.jsx           # Navigation component
+│   │   ├── VideoSection.jsx     # Hero video section
+│   │   ├── ServicesSection.jsx  # Services section
+│   │   ├── AboutUsSection.jsx   # About Us section
+│   │   ├── ContactSection.jsx   # Contact form section
+│   │   └── Footer.jsx           # Footer component
+│   │
+│   ├── App.js                   # Main application component
+│   ├── App.css                  # App-specific styles
+│   ├── index.js                 # Entry point
+│   └── index.css                # Global styles with Tailwind directives
+│
+├── package.json                 # Dependencies and scripts
+├── package-lock.json            # Locked dependencies
+├── tailwind.config.js           # Tailwind CSS configuration
+└── postcss.config.js            # PostCSS configuration
