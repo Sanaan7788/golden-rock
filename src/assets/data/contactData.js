@@ -8,14 +8,14 @@ const contactInfo = {
     title: "Contact Us",
     subtitle: "Get in touch with our team of experts",
     address: {
-      street: "123 Energy Boulevard",
+      street: "11211 Katy Freeway, Suit 165",
       city: "Houston",
       state: "TX",
-      zip: "77001",
+      zip: "77079",
       country: "United States"
     },
     phone: "+1 (713) 555-7890",
-    email: "info@goldenrock.com",
+    email: "admin@goldenrockgroup.us",
     hours: "Monday - Friday: 8:00 AM - 6:00 PM CST",
     socialLinks: [
       {

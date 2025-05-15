@@ -13,9 +13,9 @@ function App() {
       <Navbar />
       {/* Add padding-top to account for fixed navbar */}
       <main className="flex-grow pt-16">
-        <VideoSection />
-        <ServicesSection />
+        {/* <VideoSection /> */}
         <AboutUsSection />
+        <ServicesSection />
         <ContactSection />
         {/* Other sections will be added here */}
       </main>

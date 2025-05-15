@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import logoImage from "../assets/images/logo-navbar.png";
 
 const Footer = () => {
   const handleNavClick = (sectionId) => {
@@ -8,10 +9,10 @@ const Footer = () => {
       const offset = 80; // Height of navbar plus some padding
       const elementPosition = section.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -22,27 +23,63 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center">
-              <svg className="h-8 w-8 text-golden" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2.236L18 8v8l-6 3-6-3V8l6-3.764z" />
-                <path d="M12 6L7 9v6l5 3 5-3V9l-5-3z" />
-              </svg>
-              <h3 className="ml-2 text-xl font-bold text-golden font-raleway">Golden Rock</h3>
+              <img
+                src={logoImage}
+                alt="Golden Rock Logo"
+                className="h-8 sm:h-9 md:h-10 w-auto mr-2"
+              />
+              <h3 className="ml-2 text-xl font-bold text-golden font-raleway">
+                Golden Rock
+              </h3>
             </div>
             <p className="mt-2 text-cream">
-              Transforming oil and gas operations through expert technical services and innovative solutions.
+              Transforming oil and gas operations through expert technical
+              services and innovative solutions.
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-golden font-raleway">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-golden font-raleway">
+              Quick Links
+            </h3>
             <ul className="mt-4 space-y-2">
-              <li><button onClick={() => handleNavClick('home')} className="text-cream hover:text-golden transition-colors duration-300">Home</button></li>
-              <li><button onClick={() => handleNavClick('services')} className="text-cream hover:text-golden transition-colors duration-300">Services</button></li>
-              <li><button onClick={() => handleNavClick('about')} className="text-cream hover:text-golden transition-colors duration-300">About</button></li>
-              <li><button onClick={() => handleNavClick('contact')} className="text-cream hover:text-golden transition-colors duration-300">Contact</button></li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("home")}
+                  className="text-cream hover:text-golden transition-colors duration-300"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("services")}
+                  className="text-cream hover:text-golden transition-colors duration-300"
+                >
+                  Services
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("about")}
+                  className="text-cream hover:text-golden transition-colors duration-300"
+                >
+                  About
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("contact")}
+                  className="text-cream hover:text-golden transition-colors duration-300"
+                >
+                  Contact
+                </button>
+              </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-golden font-raleway">Contact</h3>
+            <h3 className="text-lg font-semibold text-golden font-raleway">
+              Contact
+            </h3>
             <ul className="mt-4 space-y-2">
               <li className="text-cream">123 Energy Boulevard</li>
               <li className="text-cream">Houston, TX 77001</li>
@@ -52,7 +89,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-rust pt-8">
-          <p className="text-cream text-center">© 2025 Golden Rock. All rights reserved.</p>
+          <p className="text-cream text-center">
+            © 2025 Golden Rock. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
